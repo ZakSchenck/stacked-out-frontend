@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stacked-out-frontend/static/css/main.655ae75c.css",
+    "main.js": "/stacked-out-frontend/static/js/main.7848dd0d.js",
+    "static/media/zak-img.png": "/stacked-out-frontend/static/media/zak-img.d92fce42556e425f6d00.png",
+    "static/media/cartooncomputer.png": "/stacked-out-frontend/static/media/cartooncomputer.b9d77feacd7d896c6c21.png",
+    "index.html": "/stacked-out-frontend/index.html",
+    "main.655ae75c.css.map": "/stacked-out-frontend/static/css/main.655ae75c.css.map",
+    "main.7848dd0d.js.map": "/stacked-out-frontend/static/js/main.7848dd0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.655ae75c.css",
+    "static/js/main.7848dd0d.js"
+  ]
+}
