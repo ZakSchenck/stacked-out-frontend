@@ -1,0 +1,38 @@
+.loading-main {
+    background: linear-gradient( #a72929, #bf3a30);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 101vh;
+    margin-top: -8px;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+#circle-1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+#circle-1::after {
+  content: " ";
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 10px solid white;
+  border-color: white transparent white transparent;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+

@@ -1,0 +1,73 @@
+@import "../../scss-variables/variables.scss";
+header {
+  display: flex;
+  flex-direction: column;
+  input {
+    background-color: rgb(218, 233, 238);
+    border: none;
+    height: 35px;
+    padding: 2px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.header {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  height: 55px;
+  align-items: center;
+  border-bottom: 1px solid $border;
+  background-color: white;
+  h2 {
+    color: $grayText;
+    font-size: 38px;
+    margin-top: -7px;
+    margin-left: auto;
+    margin-right: 12px;
+  }
+  button {
+    font-size: 17px;
+    border: none;
+    background-color: $theme;
+    color: white;
+    margin-left: auto;
+    margin-right: 16px;
+    border-radius: 6px;
+    padding: 8px 12px;
+    transition: .4s;
+    &:hover {
+      background-color: red;
+      transition: .4s;
+      cursor: pointer;
+    }
+  }
+  h1 {
+    color: $theme;
+    font-size: 30px;
+    margin-left: 10px;
+    span {
+      color: white;
+      background-color: $theme;
+      padding: 2px 4px;
+      margin-left: 5px;
+      border-radius: 6px;
+    }
+  }
+  img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid black;
+      margin-right: 10px;
+  }
+}
+
+@media all and (min-width: 450px) {
+  header input {
+    height: 40px;
+    width: 400px;
+    margin: 5px auto;
+    border-radius: 5px;
+  }
+}

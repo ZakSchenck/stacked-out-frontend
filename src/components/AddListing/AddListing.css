@@ -1,0 +1,95 @@
+.main-add-section {
+  background-color: white;
+  width: 94%;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-add-section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+}
+
+.main-add-section form label {
+  margin-top: 30px;
+  color: #8f8f8f;
+}
+
+.main-add-section form input {
+  border: none;
+  background-color: #ebebfb;
+  height: 33px;
+  padding: 5px;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+.main-add-section form #description {
+  height: 200px;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  background-color: #ebebfb;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+.main-add-section form #confirm {
+  background-color: #3638ad;
+  color: white;
+  width: 100px;
+  font-size: 20px;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 7px;
+  margin: 10px auto;
+}
+
+.main-add-section form #confirm:hover {
+  background-color: #24257a;
+  cursor: pointer;
+}
+
+.main-add-section form #cancel {
+  background-color: #cc0000;
+  color: white;
+  width: 100px;
+  font-size: 20px;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 7px;
+  margin: 0 auto;
+  display: block;
+}
+
+.main-add-section form #cancel:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+@media all and (min-width: 550px) {
+  .main-add-section {
+    width: 540px;
+  }
+  .main-add-section label {
+    margin-left: 14px;
+  }
+  .main-add-section input {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .main-add-section #description {
+    width: 50%;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=AddListing.css.map */

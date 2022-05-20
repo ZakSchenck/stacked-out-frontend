@@ -1,0 +1,137 @@
+.job-listing {
+  border-bottom: 1px solid #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  padding: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.job-listing:focus {
+  background-color: #e9e9fb;
+}
+
+.job-listing #trashcan {
+  position: absolute;
+  right: 8px;
+  bottom: 5px;
+}
+
+.job-listing .company-logo {
+  font-size: 6.5px;
+  background-image: linear-gradient(135deg, #6d0000, black, #6d0000);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  height: 42px;
+  width: 42px;
+  margin: 5px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.job-listing .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job-listing .description .jobtitle {
+  color: #cc0000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.job-listing .description h2 {
+  font-size: 15px;
+  color: gray;
+  font-weight: 300;
+  margin: 2.5px;
+  font-weight: 400;
+}
+
+.job-listing .description .company-name {
+  color: #272727;
+  font-weight: 600;
+}
+
+#dark-background {
+  position: fixed;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: .65;
+}
+
+.job-section {
+  overflow-y: scroll;
+}
+
+@media all and (min-width: 550px) {
+  .job-listing {
+    width: 550px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 760px) {
+  .job-listing {
+    width: 760px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .job-listing {
+    width: 500px;
+  }
+  .job-section {
+    width: 500px;
+  }
+  .main-job-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    height: 758px;
+    overflow-x: hidden;
+  }
+  .main-job-container div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=Job.css.map */

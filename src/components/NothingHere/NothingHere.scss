@@ -1,0 +1,19 @@
+.nothing-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid lightgray;
+    h2 {
+        color: gray;
+        font-size: 30px;
+        margin: 10px;
+    }
+    img {
+        margin: 0 auto;
+        width: 400px;
+        display: block;
+    }
+}

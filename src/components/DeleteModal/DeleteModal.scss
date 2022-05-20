@@ -1,0 +1,62 @@
+@import "../../scss-variables/variables.scss";
+
+.modal-container {
+  background-color: white;
+  width: 90%;
+  height: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  #confirm-text {
+    margin-top: 20px;
+  }
+  .confirm-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 22px;
+    #yes-btn {
+      background-color: rgb(54, 56, 173);
+      color: white;
+      width: 70px;
+      font-size: 23px;
+      border: none;
+      padding: 6px 8px;
+      border-radius: 7px;
+      &:hover {
+        background-color: rgb(36, 37, 122);
+        cursor: pointer;
+      }
+    }
+    #no-btn {
+      background-color: $theme;
+      color: white;
+      width: 70px;
+      font-size: 23px;
+      border: none;
+      padding: 6px 8px;
+      border-radius: 7px;
+      display: block;
+      &:hover {
+        cursor: pointer;
+        background-color: red;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 555px) {
+  .modal-container {
+    width: 500px;
+  }
+}
