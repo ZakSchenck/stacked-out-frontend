@@ -26,8 +26,8 @@ function AddListing() {
   const employeeHandler = (e) => {
     setEmployeeInput(e.target.value);
     if (employeeInput.length === 6) {
-        setEmployeeInput(employeeInput.slice(0, 5))
-    } 
+      setEmployeeInput(employeeInput.slice(0, 5));
+    }
   };
   const descriptionHandler = (e) => {
     setDescriptionInput(e.target.value);
@@ -35,21 +35,24 @@ function AddListing() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    const res = await fetch(`https://disjointed-out.herokuapp.com/api/v1/listings`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        img: "",
-        employees: employeeInput,
-        company: companyInput,
-        jobtype: typeInput,
-        jobtitle: titleInput,
-        description: descriptionInput,
-        location: locationInput,
-      }),
-    });
+    const res = await fetch(
+      `https://disjointed-out.herokuapp.com/api/v1/listings`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          img: "",
+          employees: employeeInput,
+          company: companyInput,
+          jobtype: typeInput,
+          jobtitle: titleInput,
+          description: descriptionInput,
+          location: locationInput,
+        }),
+      }
+    );
     const data = res.json();
     if (
       employeeInput === "" ||
@@ -59,7 +62,7 @@ function AddListing() {
       descriptionInput === "" ||
       locationInput === ""
     ) {
-      return console.error('error')
+      return console.error("error");
     }
     return data;
   };
@@ -96,7 +99,7 @@ function AddListing() {
 
         <label htmlFor="employees">Employee Count:</label>
         <input
-            value={employeeInput}
+          value={employeeInput}
           type="number"
           name="employees"
           onChange={employeeHandler}
@@ -112,9 +115,11 @@ function AddListing() {
           onChange={descriptionHandler}
         ></textarea>
 
-        <button type="submit" id="confirm">
-          Confirm
-        </button>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <button type="submit" id="confirm">
+            Confirm
+          </button>
+        </Link>
         <Link to="/" style={{ textDecoration: "none" }}>
           <button id="cancel">Cancel</button>
         </Link>
