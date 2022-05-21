@@ -5,15 +5,15 @@
 If you would like to see my backend code, check it out here: https://github.com/ZakSchenck/stacked-out-backend
 
 ## Tools Used
-• React 
-• React Router
-• Sass/SCSS
-• Node.js
-• Express.js
-• PostgreSQL
+• React  <br />
+• React Router <br />
+• Sass/SCSS <br />
+• Node.js <br />
+• Express.js <br />
+• PostgreSQL <br />
 
 ## CRUD operations used
-• GET job listings
-• POST new job listing
-• DELETE job listing
+• GET job listings <br />
+• POST new job listing <br />
+• DELETE job listing <br />
 
