@@ -1,6 +1,6 @@
 import React from "react";
 import "./AddListing.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function AddListing() {
@@ -10,6 +10,7 @@ function AddListing() {
   const [typeInput, setTypeInput] = useState("Full-Time");
   const [employeeInput, setEmployeeInput] = useState("");
   const [descriptionInput, setDescriptionInput] = useState("");
+  const navigate = useNavigate();
 
   const companyHandler = (e) => {
     setCompanyInput(e.target.value);
@@ -54,7 +55,10 @@ function AddListing() {
       }
     );
     const data = res.json();
-    return data;
+    if (res) {
+      navigate("/");
+      return data;
+    }
   };
 
   return (
@@ -104,9 +108,7 @@ function AddListing() {
           maxLength="800"
           onChange={descriptionHandler}
         ></textarea>
-        <Link to="/" style={{ textDecoration: "none", margin: "0 auto" }} type="submit">
-          <button id="confirm">Confirm</button>
-        </Link>
+        <button id="confirm">Confirm</button>
         <Link to="/" style={{ textDecoration: "none" }}>
           <button id="cancel">Cancel</button>
         </Link>
