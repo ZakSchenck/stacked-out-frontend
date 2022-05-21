@@ -54,16 +54,6 @@ function AddListing() {
       }
     );
     const data = res.json();
-    if (
-      employeeInput === "" ||
-      companyInput === "" ||
-      typeInput === "" ||
-      titleInput === "" ||
-      descriptionInput === "" ||
-      locationInput === ""
-    ) {
-      return console.error("error");
-    }
     return data;
   };
 
@@ -114,11 +104,8 @@ function AddListing() {
           maxLength="800"
           onChange={descriptionHandler}
         ></textarea>
-
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <button type="submit" id="confirm">
-            Confirm
-          </button>
+        <Link to="/" style={{ textDecoration: "none", margin: "0 auto" }} type="submit">
+          <button id="confirm">Confirm</button>
         </Link>
         <Link to="/" style={{ textDecoration: "none" }}>
           <button id="cancel">Cancel</button>
