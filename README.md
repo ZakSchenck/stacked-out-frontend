@@ -14,7 +14,7 @@ If you would like to see my backend code, check it out here: https://github.com/
 
 ## CRUD operations used
 • GET job listings <br />
-`
+```
 const getAllJobs = (req, res) => {
   db.query("SELECT * from public.listing", (err, dbRes) => {
     if (err) {
@@ -24,7 +24,7 @@ const getAllJobs = (req, res) => {
     }
   });
 };
-`
+```
 • POST new job listing <br />
 `
 const createListing = (req, res) => {
