@@ -26,7 +26,7 @@ const getAllJobs = (req, res) => {
 };
 ```
 • POST new job listing <br />
-`
+```
 const createListing = (req, res) => {
   const query =
     "INSERT INTO public.listing (img, employees, company, jobtype, jobtitle, location, description) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *";
@@ -48,9 +48,9 @@ const createListing = (req, res) => {
     }
   });
 };
-`
+```
 • DELETE job listing <br />
-`
+```
 const deleteListing = (req, res) => {
   db.query(
     "DELETE from public.listing WHERE public.listing.id = $1",
@@ -64,5 +64,5 @@ const deleteListing = (req, res) => {
     }
   );
 };
-`
+```
 
